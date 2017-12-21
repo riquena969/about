@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=ABeeZee');
+
+.fullScreen {
+    width: 100%;
+    height: 100vh
+}
+.fullScreen .spacer {
+	margin-top: 18vh;
+}
+.fullScreen h1 {
+	font-size: 4em;
+	font-family: 'ABeeZee', sans-serif
+}
+.text-white {
+	color: #FFF
+}
+
+.parallaxBackground {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgPrincipal {
+	background-image: url('../images/principal.jpg');
+}
