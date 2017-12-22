@@ -6,17 +6,18 @@
         <title>Kevin Anthony da Cruz Riquena</title>
         <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="./libs/custom/style.css">
+        <link rel="stylesheet" href="./libs/animate/animate.css">
     </head>
     <body>
         <div class="fullScreen bgPrincipal parallaxBackground text-center">
             <div class="container">
                 <div class="spacer"></div>
                 <div class="row">
-                    <div class="col-xs-12 text-uppercase text-white">
+                    <div class="col-xs-12 text-uppercase text-white wow animated flipInX">
                         <h1>Kevin Anthony da Cruz Riquena</h1>
                     </div>
                 </div>
-                <a href="#minhaTimeline"><span class="glyphicon glyphicon-menu-down setaBaixoPrincipal text-white" aria-hidden="true"></span></a>
+                <a href="#minhaTimeline"><span class="glyphicon glyphicon-menu-down setaBaixoPrincipal text-white animated infinite swing" aria-hidden="true"></span></a>
             </div>
         </div>
         <div class="container" id="minhaTimeline">
@@ -24,7 +25,7 @@
                 <h1 id="timeline">Minha Timeline</h1>
             </div>
             <ul class="timeline">
-                <li>
+                <li class="wow animated bounceInLeft">
                     <div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
@@ -36,7 +37,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="timeline-inverted">
+                <li class="timeline-inverted wow animated bounceInRight">
                     <div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
@@ -48,7 +49,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="wow animated bounceInLeft">
                     <div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
@@ -60,7 +61,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="timeline-inverted">
+                <li class="timeline-inverted wow animated bounceInRight">
                     <div class="timeline-badge warning"><i class="glyphicon glyphicon-time"></i></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
@@ -72,7 +73,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="wow animated bounceInLeft">
                     <div class="timeline-badge warning"><i class="glyphicon glyphicon-time"></i></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
@@ -84,7 +85,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="timeline-inverted">
+                <li class="timeline-inverted wow animated bounceInRight">
                     <div class="timeline-badge primary"><i class="glyphicon glyphicon-time"></i></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
@@ -99,6 +100,7 @@
             </ul>
         </div>
         <script src="./libs/jquery/jquery.min.js"></script>
+        <script src="./libs/WOW/dist/wow.min.js"></script>
         <script src="./libs/custom/script.js"></script>
     </body>
 </html>
