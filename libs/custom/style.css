@@ -22,6 +22,9 @@
 .bgPrincipal {
     background-image: url('../images/principal.jpg');
 }
+.bg-dark {
+    background-color: #323232;
+}
 .timeline {
     list-style: none;
     padding: 20px 0 20px;
@@ -183,4 +186,15 @@
     position: absolute;
     top: calc(100vh - 120px);
     left: calc(50% - 25px);
+}
+
+.image-portfolio {
+    filter: grayscale(80%);
+    transition: all linear .2s
+}
+
+.image-portfolio:hover {
+    filter: grayscale(0%);
+    transform: rotate(2deg) scale(1.06);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
