@@ -3,8 +3,11 @@
     width: 100%;
     min-height: 100vh
 }
-.fullScreen .spacer {
+.spacer {
     margin-top: 18vh;
+}
+.spacer-short {
+    margin-top: 8vh;
 }
 .fullScreen h1 {
     font-size: 4em;

@@ -10,14 +10,17 @@ $(document).ready(function() {
 
 function inserirEstrelas() {
     $('.estrelas').each(function(key, element) {
-        let quantidadeEstrelas = $(element).attr('quantidadeEstrelas');
+        let quantidadeEstrelas = parseFloat($(element).attr('quantidadeEstrelas'));
         let htmlEstrelas       = '';
 
-        for (var i = 0; i < quantidadeEstrelas; i++) {
-            htmlEstrelas += '<span class="glyphicon glyphicon-star" aria-hidden="true"></span>';
+        for (var i = 0; i < Math.floor(quantidadeEstrelas); i++) {
+            htmlEstrelas += '<i class="fa fa-star" aria-hidden="true"></i>';
         }
-        for (var i = 0; i < (5 - quantidadeEstrelas); i++) {
-            htmlEstrelas += '<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>';
+        if (quantidadeEstrelas != Math.floor(quantidadeEstrelas)) {
+            htmlEstrelas += '<i class="fa fa-star-half-o" aria-hidden="true"></i>';
+        }
+        for (var i = 0; i < (5 - Math.ceil(quantidadeEstrelas)); i++) {
+            htmlEstrelas += '<i class="fa fa-star-o" aria-hidden="true"></i>';
         }
 
         $(element).html(htmlEstrelas);
