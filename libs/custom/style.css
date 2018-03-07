@@ -201,3 +201,16 @@
     transform: rotate(2deg) scale(1.06);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
+
+.imagem-topo {
+    position: absolute;
+    width: 50px;
+    right: 20px;
+    top: 20px;
+    transition: transform 0.64s ease-in-out;
+}
+
+.imagem-topo:hover {
+    transform: rotate(-360deg);
+    transition: transform 0.64s ease-in-out;
+}

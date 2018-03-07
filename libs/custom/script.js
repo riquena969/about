@@ -4,6 +4,8 @@ $(document).ready(function() {
         $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
     });
 
+    $('[data-toggle="tooltip"]').tooltip(); 
+
     new WOW().init();
     inserirEstrelas();
 });
